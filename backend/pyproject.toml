@@ -21,3 +21,13 @@ dependencies = [
 [tool.uv]
 add-bounds = "exact"
 exclude-newer = "7 days"
+
+[project.optional-dependencies]
+ingest = [
+    "docling==2.102.1",
+]
+
+[dependency-groups]
+dev = [
+    "docling==2.102.1",
+]
